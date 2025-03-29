@@ -1,28 +1,28 @@
-export default class Cl_profesor{
-    constructor(nombre,personal,bono){
+export default class Cl_profesor {
+    constructor(nombre, personal, bono) {
         this.nombre = nombre;
         this.personal = personal;
         this.bono = bono;
     }
-    set nombre(n){
+    set nombre(n) {
         this._nombre = n
     }
-    get nombre(){
+    get nombre() {
         return this._nombre;
     }
-    set personal(p){
+    set personal(p) {
         this._personal = p;
     }
-    get personal(){
+    get personal() {
         return this._personal;
     }
-    set bono(b){
+    set bono(b) {
         this._bono = b;
     }
-    get bono(){
+    get bono() {
         return this._bono;
     }
-    turnos(){
-        return  this.personal == 1 ? "fijo":"contratado";
+    turnos() {
+        return this.personal == 1 ? "fijo" : "contratado";
     }
 }

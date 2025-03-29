@@ -1,14 +1,14 @@
 import Cl_profesor from "./Cl_profesor.js";
 
-export default class Cl_fijo extends Cl_profesor{
-    constructor(nombre,personal,bono,sueldo){
-        super(nombre,personal,bono);
+export default class Cl_fijo extends Cl_profesor {
+    constructor(nombre, personal, bono, sueldo) {
+        super(nombre, personal, bono);
         this.sueldo = sueldo;
     }
-    sueldos(){
+    sueldos() {
         return this.sueldo;
     }
-    total(){
+    total() {
         return this.sueldos() + this.bono;
     }
 }
